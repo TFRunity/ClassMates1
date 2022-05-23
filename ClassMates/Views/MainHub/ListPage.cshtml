@@ -1,0 +1,534 @@
+﻿@using ClassMates.Models 
+@model IEnumerable<Student>
+@{
+    //Сорян, не удалось реализовать циклы, тут развязываются блоки
+    Student koolya = Model.ElementAt(0);
+    Student liza = Model.ElementAt(1);
+    Student nikita = Model.ElementAt(2);
+    Student nika = Model.ElementAt(3);
+    Student egor = Model.ElementAt(4);
+    Student danili = Model.ElementAt(5);
+    Student dimai = Model.ElementAt(6);
+    Student kirild = Model.ElementAt(7);
+    Student kirils = Model.ElementAt(8);
+    Student zhenia = Model.ElementAt(9);
+    Student misha = Model.ElementAt(10);
+    Student pashastep = Model.ElementAt(11);
+    Student pashasash = Model.ElementAt(12);
+    Student sergray = Model.ElementAt(13);
+    Student sergkny = Model.ElementAt(14);
+    Student sergkons = Model.ElementAt(15);
+    Student vadimka = Model.ElementAt(16);
+    Student vadimrom = Model.ElementAt(17);
+    Student roman = Model.ElementAt(18);
+    Student anya = Model.ElementAt(19);
+    Student nastya = Model.ElementAt(20);
+    Student vika = Model.ElementAt(21);
+    Student arina = Model.ElementAt(22);
+    Student ariana = Model.ElementAt(23);
+    Student lenya = Model.ElementAt(24);
+    Student ilya = Model.ElementAt(25);
+    Student motorkin = Model.ElementAt(26);
+    Student sashashav = Model.ElementAt(27);
+    Student dimak = Model.ElementAt(28);
+    Student phezik = Model.ElementAt(29);
+    Student alexey = Model.ElementAt(30);
+    Student obchie = Model.ElementAt(31);
+}
+@*не получается зациклить отображение, пришлось писать вручную*@
+    <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @koolya.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@koolya.id"> @koolya.Name </a>
+            <h3><span class="text-muted">@koolya.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @koolya.DateBirth</span></h3>
+        <h3><p class="lead">@koolya.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@koolya.MainImg" width="500" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @liza.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@liza.id"> @liza.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @liza.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @liza.DateBirth</span></h3>
+        <h3><p class="lead">@liza.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@liza.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @nikita.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@nikita.id"> @nikita.Name </a>
+            <h3><span class="text-muted">@nikita.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @nikita.DateBirth</span></h3>
+        <h3><p class="lead">@nikita.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@nikita.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @nika.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@nika.id"> @nika.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @nika.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @nika.DateBirth</span></h3>
+        <h3><p class="lead">@nika.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@nika.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @egor.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@egor.id"> @egor.Name </a>
+            <h3><span class="text-muted">@egor.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @egor.DateBirth</span></h3>
+        <h3><p class="lead">@egor.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@egor.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @danili.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@danili.id"> @danili.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @danili.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @danili.DateBirth</span></h3>
+        <h3><p class="lead">@danili.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@danili.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @dimai.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@dimai.id"> @dimai.Name </a>
+            <h3><span class="text-muted">@dimai.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @dimai.DateBirth</span></h3>
+        <h3><p class="lead">@dimai.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@dimai.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @kirild.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@kirild.id"> @kirild.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @kirild.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @kirild.DateBirth</span></h3>
+        <h3><p class="lead">@kirild.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@kirild.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @kirils.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@kirils.id"> @kirils.Name </a>
+            <h3><span class="text-muted">@kirils.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @kirils.DateBirth</span></h3>
+        <h3><p class="lead">@kirils.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@kirils.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @zhenia.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@zhenia.id"> @zhenia.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @zhenia.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @zhenia.DateBirth</span></h3>
+        <h3><p class="lead">@zhenia.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@zhenia.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @misha.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@misha.id"> @misha.Name </a>
+            <h3><span class="text-muted">@misha.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @misha.DateBirth</span></h3>
+        <h3><p class="lead">@misha.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@misha.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @pashastep.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@pashastep.id"> @pashastep.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @pashastep.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @pashastep.DateBirth</span></h3>
+        <h3><p class="lead">@pashastep.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@pashastep.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @pashasash.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@pashasash.id"> @pashasash.Name </a>
+            <h3><span class="text-muted">@pashasash.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @pashasash.DateBirth</span></h3>
+        <h3><p class="lead">@pashasash.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@pashasash.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @sergray.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@sergray.id"> @sergray.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @sergray.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @sergray.DateBirth</span></h3>
+        <h3><p class="lead">@sergray.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@sergray.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @sergkny.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@sergkny.id"> @sergkny.Name </a>
+            <h3><span class="text-muted">@sergkny.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @sergkny.DateBirth</span></h3>
+        <h3><p class="lead">@sergkny.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@sergkny.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @sergkons.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@sergkons.id"> @sergkons.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @sergkons.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @sergkons.DateBirth</span></h3>
+        <h3><p class="lead">@sergkons.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@sergkons.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @vadimka.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@vadimka.id"> @vadimka.Name </a>
+            <h3><span class="text-muted">@vadimka.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @vadimka.DateBirth</span></h3>
+        <h3><p class="lead">@vadimka.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@vadimka.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @vadimrom.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@vadimrom.id"> @vadimrom.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @vadimrom.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @vadimrom.DateBirth</span></h3>
+        <h3><p class="lead">@vadimrom.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@vadimrom.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @roman.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@roman.id"> @roman.Name </a>
+            <h3><span class="text-muted">@roman.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @roman.DateBirth</span></h3>
+        <h3><p class="lead">@roman.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@roman.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @anya.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@anya.id"> @anya.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @anya.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @anya.DateBirth</span></h3>
+        <h3><p class="lead">@anya.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@anya.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @nastya.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@nastya.id"> @nastya.Name </a>
+            <h3><span class="text-muted">@nastya.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @nastya.DateBirth</span></h3>
+        <h3><p class="lead">@nastya.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@nastya.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @vika.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@vika.id"> @vika.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @vika.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @vika.DateBirth</span></h3>
+        <h3><p class="lead">@vika.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@vika.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @arina.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@arina.id"> @arina.Name </a>
+            <h3><span class="text-muted">@arina.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @arina.DateBirth</span></h3>
+        <h3><p class="lead">@arina.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@arina.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @ariana.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@ariana.id"> @ariana.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @ariana.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @ariana.DateBirth</span></h3>
+        <h3><p class="lead">@ariana.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@ariana.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @lenya.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@lenya.id"> @lenya.Name </a>
+            <h3><span class="text-muted">@lenya.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @lenya.DateBirth</span></h3>
+        <h3><p class="lead">@lenya.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@lenya.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @ilya.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@ilya.id"> @ilya.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @ilya.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @ilya.DateBirth</span></h3>
+        <h3><p class="lead">@ilya.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@ilya.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @motorkin.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@motorkin.id"> @motorkin.Name </a>
+            <h3><span class="text-muted">@motorkin.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @motorkin.DateBirth</span></h3>
+        <h3><p class="lead">@motorkin.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@motorkin.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @sashashav.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@sashashav.id"> @sashashav.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @sashashav.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @sashashav.DateBirth</span></h3>
+        <h3><p class="lead">@sashashav.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@sashashav.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="container marketing">
+        <div class="row featurette">
+        <div class="col-md-7">
+        <h2 class="featurette-heading" @dimak.Name<h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@dimak.id"> @dimak.Name </a>
+            <h3><span class="text-muted">@dimak.FutureJob</span></h3>
+            <h3><span class="text-muted">День рождения: @dimak.DateBirth</span></h3>
+        <h3><p class="lead">@dimak.Description</p></h3>
+      </div>
+       <div class="col-md-5">
+        <img src ="@dimak.MainImg" width="400" height="500" focusable="false" />
+      </div>
+      </div>
+
+          <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @phezik.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@phezik.id"> @phezik.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @phezik.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @phezik.DateBirth</span></h3>
+        <h3><p class="lead">@phezik.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@phezik.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 ">
+        <h2 class="featurette-heading text-end" @alexey.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@alexey.id"> @alexey.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @alexey.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @alexey.DateBirth</span></h3>
+        <h3><p class="lead">@alexey.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@alexey.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text-end" @obchie.Name <h2/>
+        <a href="https://localhost:7138/MainHub/PersonPage/@obchie.id"> @obchie.Name </a>
+            <h3 class="text-rights"><span class="text-muted"> @obchie.FutureJob</span></h3>
+            <h3 class="text-rights"><span class="text-muted"> День рождения: @obchie.DateBirth</span></h3>
+        <h3><p class="lead">@obchie.Description</p></h3>
+      </div>
+      <div class="col-md-5">
+        <img src ="@obchie.MainImg" width="400" height="500" focusable="false" />
+      </div>
+    </div>
+
+
+
+

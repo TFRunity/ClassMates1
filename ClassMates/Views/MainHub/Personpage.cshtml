@@ -1,0 +1,39 @@
+﻿@using ClassMates.Models 
+@model IEnumerable<Student>
+@{
+    int id = ViewBag.Id;
+    Student student = Model.ElementAt(id);
+}
+      
+      <div class=" my-5 text-center ">
+          <h1 class="display-4 fw-bold text-center px-4 ">@student.Name</h1>
+          
+      <div class="container px-5">
+        <img src="@student.MainImg" class="img-fluid border rounded-3 shadow-lg mb-4" width="500px" height="500px" loading="lazy">
+      </div>
+      @*Описание*@
+      <div>
+          <h2 class="text-cetners">@student.Description </h2>
+      </div>
+      <div>
+        @{
+            for(int i = 1; i <= student.Img.Count(); i++ )
+            {
+                string LinkI = $"{student.ImgLink}/{i}.jpg";
+                
+                <img src="@LinkI" width="500px" height="500px" />
+            }
+        }
+    </div>
+   </div>
+   </div>
+@{
+    if(id == 30)
+    {
+        <div class=" my-5 text-center ">
+          <h1 class="display-4 fw-bold text-center px-4 ">@student.Name - создатель этого сайта</h1>
+          </div>
+    }
+}
+
+
