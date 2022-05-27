@@ -1,7 +1,9 @@
-﻿namespace ClassMates.InterFaces
+﻿using ClassMates.Models;
+
+namespace ClassMates.InterFaces
 {
     public interface IAllPerson
     {
-        public IEnumerable<object> ReturnObj { get; }
+        public IEnumerable<Student> ReturnObj { get; }
     }
 }

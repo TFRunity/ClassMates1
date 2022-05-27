@@ -19,8 +19,7 @@ namespace ClassMates.Controllers
             {
                 "/images/Obchie/17.jpg","/images/Obchie/17.jpg","/images/Obchie/17.jpg"
             };
-            string Servername = "";
-            ViewBag.Title = "Раздел";
+            ViewBag.Title = "Общая страница";
             ViewBag.Ttile = "Главная страница";
             ViewBag.Obshie = ObshPho;
             var students = allPerson.ReturnObj;
@@ -44,6 +43,7 @@ namespace ClassMates.Controllers
         }
         public ViewResult ListPage()
         {
+            ViewBag.Title = "Все ученики";
             ViewBag.Ttile = "Весь 9 <Б>";
             List<Student> students = (List<Student>)allPerson.ReturnObj;
             return View(students);

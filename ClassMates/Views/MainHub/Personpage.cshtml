@@ -1,8 +1,8 @@
 ﻿@using ClassMates.Models 
 @model IEnumerable<Student>
 @{
-    int id = ViewBag.Id;
-    Student student = Model.ElementAt(id);
+    int Id = ViewBag.Id;
+    Student student = Model.ElementAt(Id);
 }
       
       <div class=" my-5 text-center ">
@@ -28,7 +28,7 @@
    </div>
    </div>
 @{
-    if(id == 30)
+    if(Id == 30)
     {
         <div class=" my-5 text-center ">
           <h1 class="display-4 fw-bold text-center px-4 ">@student.Name - создатель этого сайта</h1>

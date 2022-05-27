@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\ClassMates.csproj": {}
+    "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\ClassMates.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\ClassMates.csproj": {
+    "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\ClassMates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\ClassMates.csproj",
+        "projectUniqueName": "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\ClassMates.csproj",
         "projectName": "ClassMates",
-        "projectPath": "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\ClassMates.csproj",
+        "projectPath": "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\ClassMates.csproj",
         "packagesPath": "C:\\Users\\Alexe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\obj\\",
+        "outputPath": "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alexe\\AppData\\Roaming\\NuGet\\NuGet.Config",

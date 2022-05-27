@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/9+jatWhu71hOQ49WAaaLHf+pIkIUiznGCH3VQHZuGrP3rb2FmQjDNmDz4FK3NFLk2PXySCN95jEGV1ny8icLA==",
+  "dgSpecHash": "QxmcBq6eRtfdNK2BOcYcTijoSWyx4hNWdz38oqsAir4vVXAsYs/8BkPdEf5xjOLgEe5jX5qKFR9QwChVZ9RZAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexe\\source\\repos\\ClassMates\\ClassMates\\ClassMates.csproj",
+  "projectFilePath": "C:\\Users\\Alexe\\Desktop\\ClassMates\\ClassMates\\ClassMates.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexe\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
     "C:\\Users\\Alexe\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
